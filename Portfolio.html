@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Dylan Giordano</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            background: #141622;
+            color: #ececec;
+        }
+        header {
+            padding: 2.3rem 0 1.2rem 0;
+            text-align: center;
+            background: #1c1f2b;
+            border-bottom: 1px solid #22252e;
+        }
+        header h1 {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            font-weight: 900;
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 1.4rem;
+        }
+        nav a {
+            color: #fecf48;
+            background: none;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.02em;
+            padding: 7px 13px;
+            border-radius: 8px;
+            margin: 0 8px;
+            transition: background .18s, color .18s;
+        }
+        nav a:hover {
+            background: #fecf48;
+            color: #1c1f2b;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            grid-gap: 24px;
+            padding: 2rem 3vw 3.5rem 3vw;
+        }
+        .gallery img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            border-radius: 13px;
+            background: #292c3a;
+            box-shadow: 0 8px 34px rgba(32,33,50,0.23);
+            transition: transform .23s, box-shadow .23s;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.04);
+            box-shadow: 0 10px 44px rgba(32,33,50,0.37);
+        }
+        .contact {
+            text-align: center;
+            margin: 24px 0 48px 0;
+            color: #9ca4b3;
+            font-size: 1.08em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+    </nav>
+    <section class="gallery">
+        <!-- Replace image URLs with your own -->
+        <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3c5c" alt="Nature">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Street">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="Sports">
+        <img src="https://images.unsplash.com/photo-1424746219973-8fe3bd07d8e3" alt="Nature">
+        <!-- Add more if you like -->
+    </section>
+    <div class="contact">
+        &copy; 2025 Dylan Giordano
+    </div>
+</body>
+</html>
