@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylan Giordano | Photography Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            background: #141622;
+            color: #ececec;
+        }
+        header {
+            padding: 2.5rem 0 1.5rem 0;
+            text-align: center;
+            background: #1c1f2b;
+            border-bottom: 1px solid #22252e;
+        }
+        header h1 {
+            font-size: 2.7rem;
+            letter-spacing: 2px;
+            font-weight: 900;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.07rem;
+            color: #9ca4b3;
+            margin-top: .25rem;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            grid-gap: 24px;
+            padding: 2rem 3vw 3.5rem 3vw;
+        }
+        .gallery img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            border-radius: 13px;
+            box-shadow: 0 8px 34px rgba(32,33,50,0.25);
+            background: #292c3a;
+            transition: transform .23s, box-shadow .23s;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.04);
+            box-shadow: 0 10px 44px rgba(32,33,50,0.37);
+        }
+        .about {
+            max-width: 720px;
+            margin: 48px auto 36px auto;
+            padding: 2rem;
+            background: #23263e;
+            border-radius: 10px;
+            box-shadow: 0 2px 14px rgba(25,27,35,0.29);
+            text-align: center;
+        }
+        .about h2 {
+            margin-bottom: 0.5em;
+            color: #fecf48;
+        }
+        .about p {
+            color: #c6c6d7;
+            line-height: 1.6;
+        }
+        .contact {
+            text-align: center;
+            margin: 24px 0 48px 0;
+            color: #9ca4b3;
+            font-size: 1.08em;
+        }
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 22px;
+            margin: 10px 0 38px 0;
+        }
+        .social a {
+            color: #ececec;
+            background: #22252e;
+            border-radius: 25px;
+            padding: 9px 15px;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: .8px;
+            box-shadow: 0 2px 12px rgba(32,33,50,0.13);
+            transition: background .18s, color .18s;
+        }
+        .social a:hover {
+            background: #fecf48;
+            color: #1c1f2b;
+        }
+        @media (max-width:600px) {
+            .about { padding: 1rem; }
+            .gallery { padding: 1em 2vw 2em 2vw; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dylan Giordano</h1>
+        <p>High School Photographer • Nature | Street | Sports</p>
+    </header>
+    <section class="gallery">
+        <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3c5c" alt="Nature Photography">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca" alt="Street Photography">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Nature Photography">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="Sports Photography">
+    </section>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I’m Dylan Giordano, a high school student deeply passionate about photography.<br>
+            My lens finds beauty in nature, vibrancy in city streets, and energy in sports moments.<br>
+            Whether it’s the quiet of a forest, the stories of people on the move, or action on the field, I strive to capture life’s unique perspectives.<br>
+            Always learning, always exploring, always framing the world as I see it.
+        </p>
+    </section>
+    <div class="social">
+        <a href="mailto:dcgiordano23@gmail.com">Email Me</a>
+        <a href="https://instagram.com/dylan_g._photography" target="_blank">Instagram: @dylan_g._photography</a>
+    </div>
+    <div class="contact">
+        &copy; 2025 Dylan Giordano
+    </div>
+</body>
+</html>
